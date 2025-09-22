@@ -1,0 +1,68 @@
+{
+  "name": "hyper-dook-portal-2025-legendary",
+  "version": "2.0.0",
+  "description": "🚀⚡ THE LEGENDARY HYPER dOoK PORTAL 2025 - Ultimate ADHD-Optimized Memory Crystal Empire ⚡🚀",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -d out",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@next/font": "^15.0.0",
+    "framer-motion": "^11.0.0",
+    "three": "^0.158.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/drei": "^9.88.0",
+    "lucide-react": "^0.292.0",
+    "clsx": "^2.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "@types/three": "^0.158.0",
+    "zustand": "^4.4.0",
+    "use-sound": "^4.0.1",
+    "react-confetti": "^6.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.0.0",
+    "gh-pages": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0"
+  },
+  "keywords": [
+    "ADHD",
+    "neurodivergent",
+    "accessibility",
+    "dyslexia-friendly",
+    "gamification",
+    "memory-management",
+    "hyperfocus",
+    "crystal-system",
+    "BROski",
+    "celebration-driven"
+  ],
+  "author": "Chief Lyndz Williams",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welshDog/tHe-HYPER-dOoK-STorY.git"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  }
+}

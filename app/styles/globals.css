@@ -1,0 +1,362 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Lexend Font Import - Scientifically proven best for dyslexia */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+/* OpenDyslexic Font - Alternative option */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('/fonts/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic-Bold.woff2') format('woff2'),
+       url('/fonts/OpenDyslexic-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ADHD-Optimized Base Styles */
+:root {
+  /* ADHD Color Variables */
+  --adhd-focus: #00D4FF;
+  --adhd-success: #00FF88;
+  --adhd-warning: #FFB800;
+  --adhd-error: #FF4757;
+  --adhd-calm: #667EEA;
+  --adhd-energy: #F093FB;
+
+  /* BROski Brand Colors */
+  --broski-blue: #0EA5E9;
+  --broski-green: #22C55E;
+  --broski-pink: #EC4899;
+  --broski-purple: #8B5CF6;
+  --broski-orange: #F59E0B;
+  --broski-teal: #14B8A6;
+
+  /* Neurodivergent-friendly backgrounds */
+  --neuro-bg-light: #FAFBFC;
+  --neuro-bg-dark: #1A202C;
+  --neuro-bg-cream: #FEF7ED;
+  --neuro-bg-mint: #F0FDF4;
+
+  /* ADHD spacing rhythm */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* Typography optimized for dyslexia */
+  --font-primary: 'Lexend', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-dyslexic: 'OpenDyslexic', 'Comic Sans MS', cursive;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --font-display: 'Lexend Deca', system-ui, sans-serif;
+
+  /* Line heights for better readability */
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 1.875;
+
+  /* Focus ring styles */
+  --focus-ring: 0 0 0 3px var(--adhd-focus);
+  --focus-ring-offset: 2px;
+}
+
+/* Dark theme variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --neuro-bg-light: #1A202C;
+    --neuro-bg-dark: #FAFBFC;
+  }
+}
+
+/* Global base styles optimized for ADHD/Dyslexia */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: 16px; /* Base size for accessibility */
+  line-height: var(--line-height-relaxed);
+  scroll-behavior: smooth;
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--neuro-bg-light);
+  color: #1A202C;
+  /* Prevent font boosting on mobile */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* Optimize text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Improve readability */
+  word-spacing: 0.16em;
+  letter-spacing: 0.025em;
+}
+
+/* Dark mode body styles */
+.dark body {
+  background-color: var(--neuro-bg-dark);
+  color: #F7FAFC;
+}
+
+/* Enhanced focus styles for keyboard navigation */
+*:focus {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+  transition: box-shadow 0.2s ease-out;
+}
+
+/* Skip to content link for accessibility */
+.skip-to-content {
+  @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4;
+  @apply bg-adhd-focus text-white px-4 py-2 rounded-lg font-semibold;
+  @apply z-50 transition-all duration-200;
+}
+
+/* ADHD-optimized typography classes */
+.adhd-heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--space-md);
+  color: var(--broski-purple);
+}
+
+.adhd-body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-sm);
+}
+
+.dyslexic-text {
+  font-family: var(--font-dyslexic) !important;
+  letter-spacing: 0.05em;
+  word-spacing: 0.16em;
+  line-height: var(--line-height-loose);
+}
+
+/* Crystal component styles */
+.crystal-surface {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.crystal-surface:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Celebration animations */
+@keyframes celebration-sparkle {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% { 
+    transform: scale(1.2) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.1) rotate(180deg);
+    opacity: 0.9;
+  }
+  75% { 
+    transform: scale(1.3) rotate(270deg);
+    opacity: 0.7;
+  }
+}
+
+.celebration-sparkle {
+  animation: celebration-sparkle 0.8s ease-out;
+}
+
+/* BROski$ score counter animations */
+@keyframes score-bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.score-bounce {
+  animation: score-bounce 0.4s ease-out;
+}
+
+/* Hyperfocus mode styles */
+.hyperfocus-mode {
+  /* Remove all distractions */
+  .distraction {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+  }
+
+  /* Enhanced focus indicators */
+  .focus-element {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    border: 2px solid var(--adhd-focus);
+  }
+
+  /* Simplified backgrounds */
+  background: var(--neuro-bg-cream);
+}
+
+/* Gamification elements */
+.progress-bar {
+  background: linear-gradient(90deg, 
+    var(--broski-blue) 0%, 
+    var(--broski-purple) 50%, 
+    var(--broski-pink) 100%);
+  border-radius: 1rem;
+  height: 1rem;
+  transition: width 0.5s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Achievement badge styles */
+.achievement-badge {
+  background: linear-gradient(135deg, 
+    var(--adhd-success) 0%, 
+    var(--broski-green) 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
+  transition: all 0.3s ease-out;
+}
+
+.achievement-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(34, 197, 94, 0.4);
+}
+
+/* Responsive utilities for ADHD-friendly design */
+@media (max-width: 768px) {
+  html {
+    font-size: 18px; /* Larger base size on mobile */
+  }
+
+  .crystal-surface {
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
+  .adhd-heading {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+  }
+}
+
+/* Print styles for accessibility */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --adhd-focus: #0066CC;
+    --adhd-success: #006600;
+    --adhd-error: #CC0000;
+  }
+
+  .crystal-surface {
+    border: 2px solid #000000;
+    background: #FFFFFF;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .celebration-sparkle,
+  .score-bounce,
+  .crystal-float {
+    animation: none;
+  }
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--broski-blue), var(--broski-purple));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--broski-purple), var(--broski-pink));
+}
