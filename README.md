@@ -1,5 +1,9 @@
 # 🚀⚡ HYPER dOoK Portal 2025 - LEGENDARY Edition ⚡🚀
 
+[💎⚡ SUPPORT THE HYPERFOCUS EMPIRE ⚡💎 – Donation & Sponsorship Portal](https://welshdog.github.io/hyperfocuszone.com-Support-Hub-/)
+
+> Join our Focus Warriors, Elite Agents, and Empire Builders to power next-gen ADHD-friendly tools!
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0-61dafb?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
