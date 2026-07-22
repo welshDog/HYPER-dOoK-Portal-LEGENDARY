@@ -1,3 +1,15 @@
+> ## 🗄️ ARCHIVED / LEGACY BUILD
+> **This repo has been superseded.** It's kept public as historical reference only.
+>
+> 👉 **Active stack lives here:**
+> - 🏰 Main Hub → [HYPERFOCUS-UNIFIED-EMPIRE](https://github.com/welshDog/HYPERFOCUS-UNIFIED-EMPIRE)
+> - ⚡ Engine → [HyperCode-V2.4](https://github.com/welshDog/HyperCode-V2.4)
+> - 🤖 Discord Bot → [BROski-Bot](https://github.com/welshDog/BROski-Bot)
+> - 🌐 Dreamer Platform → [HYPERFOCUSzon.COM-Dreamer-Platform](https://github.com/welshDog/HYPERFOCUSzon.COM-Dreamer-Platform)
+> - 🌌 Portal → [HyperFocus-Zone-Portal](https://github.com/welshDog/HyperFocus-Zone-Portal)
+>
+> *Not maintained.*
+
 # 🚀⚡ HYPER dOoK Portal 2025 - LEGENDARY Edition ⚡🚀
 
 [💎⚡ SUPPORT THE HYPERFOCUS EMPIRE ⚡💎 – Donation & Sponsorship Portal](https://welshdog.github.io/hyperfocuszone.com-Support-Hub-/)
